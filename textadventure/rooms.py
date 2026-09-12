@@ -1,1 +1,1 @@
-from combat import fight
+from combat import *
