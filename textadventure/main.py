@@ -60,17 +60,18 @@ if choice == "1":
         print("after defeating the goblin it drops a minor health potion and you realize you are in a doungeon with 2 chests their is a old one and a odd looking one.")
         print("1.odd looking one")
         print("2.old one")
-        choice=input(int("which one do you pick?: "))
-        if choice == 1:
+        choice=input("which one do you pick?> ")
+        if choice == "1":
             max_damage += 25
             potions.append("healthmajor")
             buffs.append("electro_whip")
             print("you have found the legendary electro whip granting you +25 extra damage and a major health potion!")
-        elif choice == 2:
+        elif choice == "2":
             max_health += 20
             health=max_health
             print("you found a minor health crystal increasing your health/maxhealth to",max_health,"!")
-
+        else:
+            print("you got murdered by a trap because you kinda suck at making decisions and typed a number not listed ¯\_(ツ)_/¯")
 elif choice == "2":
     print("you enter into the forest and get lost.")
 else:
